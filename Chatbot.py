@@ -3,7 +3,7 @@ import re
 from gradio.components import Textbox, HTML
 from gradio import Interface
 
-palm.configure(api_key='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')
+palm.configure(api_key='YOUR_API_KEY')
 
 models = [m for m in palm.list_models() if 'generateText' in m.supported_generation_methods]
 model = models[0].name
